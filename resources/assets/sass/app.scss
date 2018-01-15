@@ -69,8 +69,12 @@ a {
   @apply .text-grey-darkest .no-underline;
 }
 
-h1, h2, h3 {
-  @apply .mb-2;
+h1, h2, h3, h4, h5 {
+  @apply .mb-2 .text-headline .leading-loose;
+}
+
+hr {
+  @apply .border-b-2;
 }
 
 p {
@@ -133,6 +137,10 @@ div:empty {
   .current {
     @apply .font-bold;
   }
+}
+
+.sr-only {
+  display: none;
 }
 
 //
