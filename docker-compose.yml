@@ -1,0 +1,19 @@
+version: '3'
+services:
+    composer:
+        image: "composer"
+        volumes:
+            - ".:/app"
+        command: install
+
+    mysqldb:
+        image: mysql
+        container_name: mysql.phpdd.org
+        restart: always
+        environment:
+            - MYSQL_USER=root
+            - MYSQL_PASSWORD=example
+        ports:
+            - "3306:3306"
+        volumes:
+            - "./data/db/mysql:/var/lib/mysql"
