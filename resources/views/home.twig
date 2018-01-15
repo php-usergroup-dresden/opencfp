@@ -1,11 +1,11 @@
 {% extends "layouts/default.twig" %}
 
 {% block header %}
-    <header id="hero" class="bg-cover p-24" style="background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{ site.venue_image_path }}) no-repeat center -300px / cover fixed;">
+    <header id="hero" class="bg-cover p-24" style="background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{ site.venue_image_path }}) no-repeat center -300px / cover fixed;">
         <div class="container mx-auto flex">
-            <div class="p-8 bg-brand text-white">
+            <div class="p-8 bg-brand text-white rounded-sm shadow">
                 {% if cfp_open %}
-                    <h1>Call For Papers Now Open!</h1>
+                    <h1 class="text-white">Call For Papers Now Open!</h1>
                     <p>Submissions accepted until {{ site.enddate | date(site.date_format) }}</p>
                 {% else %}
                     <h1>
