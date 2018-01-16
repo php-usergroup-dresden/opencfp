@@ -1,9 +1,9 @@
 {% extends "layouts/splash.twig" %}
 {% block content %}
   <div class="opencfp-login">
-    <a class="font-serif flex items-center justify-center mb-4" href="{{ url('homepage') }}">
-      <img class="w-10 mr-2" src="{{ assets('img/logo.svg') }}" alt="OpenCFP">
-      <h1 class="font-normal text-white m-0">Open<span class="text-brand font-bold">CFP</span></h1>
+    <a class="flex items-center justify-center mb-4" href="{{ url('homepage') }}">
+      <img class="w-1/6 mr-4" src="{{ assets('img/phpugdd-logo.svg') }}" alt="PHP USERGROUP DRESDEN e.V.">
+      <img class="w-3/5" src="{{ assets('img/PHPDD18-Logo.svg') }}" alt="PHP Developer Days 2018">
     </a>
 
     {% include "_flash.twig" %}
@@ -17,6 +17,6 @@
       <button type="submit" class="btn btn-brand w-full">Login</button>
     </form>
 
-    <p class="text-light text-center text-sm my-4">New user? <a href="{{ url('user_new') }}" class="text-brand text-bold">Signup Now</a></p>
+    <p class="text-muted text-center text-sm my-4">New user? <a href="{{ url('user_new') }}" class="text-brand text-bold">Signup Now</a></p>
   </div>
 {% endblock %}

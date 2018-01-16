@@ -31,6 +31,7 @@ body {
  * Add the correct display in IE 9-.
  */
 
+footer,
 header,
 nav {
   display: block;
@@ -316,6 +317,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p {
   margin: 0;
 }
@@ -451,17 +453,6 @@ button,
   color: #a7231d;
 }
 
-.btn-brand-o {
-  border-width: 2px;
-  border-color: #a7231d;
-  color: #a7231d;
-}
-
-.btn-brand-o:hover {
-  background-color: #a7231d;
-  color: #ffffff;
-}
-
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -595,10 +586,6 @@ button,
   border-top-width: 4px;
 }
 
-.border-b-4 {
-  border-bottom-width: 4px;
-}
-
 .border-l-4 {
   border-left-width: 4px;
 }
@@ -645,6 +632,12 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.items-baseline {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .justify-center {
@@ -896,6 +889,14 @@ button,
   color: #a7231d;
 }
 
+.text-twitter {
+  color: #6cb2eb;
+}
+
+.text-phpugdd {
+  color: #de751f;
+}
+
 .text-grey-dark {
   color: #70818a;
 }
@@ -998,8 +999,16 @@ button,
   width: 8rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-1\/2 {
   width: 50%;
+}
+
+.w-1\/3 {
+  width: 33.33333%;
 }
 
 .w-2\/3 {
@@ -1227,7 +1236,8 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin-bottom: 0.5rem;
   color: #364349;
   line-height: 2;
@@ -1313,5 +1323,8 @@ div:empty {
 .opencfp-login,
 .opencfp-signup {
   color: #ffffff;
-  width: 16.66667%;
+  width: 33.33333%;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: .125rem;
 }

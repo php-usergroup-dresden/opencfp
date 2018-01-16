@@ -1,33 +1,46 @@
 <div class="flex justify-between mb-4">
     <div class="w-1/2 px-4">
-        <h2>Got a talk idea? We want to see it!</h2>
+        <h2>Your idea - your audience!</h2>
         <p>
-            We’re pleased to announce our conference, {{ site.title }} should be
-            one of the best PHP conferences where community members from around
-            the world come together to learn and share information about the latest
+            We’re pleased to announce our 4th annual community conference, {{ site.title }}.
+            Once again we want to push things forward and create a highlight experience for community members
+            from around the world who come together to learn and share information about the latest
             trends and technologies in professional PHP development.
         </p>
     </div>
 
     <div class="w-1/2 px-4">
-        <h2>Speaker Package</h2>
+        <h2>Speaker packages</h2>
         <p>
-            We know speakers are key to the success of a conference and hope you will submit a talk.  In appreciation of your efforts, we include a <a href="{{ url('speaker_package') }}" class="text-brand text-bold">speaker compensation package</a>.
+            We know speakers are key to the success of a conference and hope you will submit a talk or workshop.
+            In appreciation of your efforts, we include
+            <a href="{{ url('speaker_package') }}" class="text-brand text-bold">speaker compensation packages</a>.
         </p>
     </div>
 </div>
 
-<div class="mt-8 px-4">
-    <h2>Diversity Matters!</h2>
-    <p>
-        {{ site.title }} is committed to creating a conference that is as inclusive as possible.
-        We want to showcase talent available around the U.S. and welcome international submissions as well.
-    </p>
-    <p>
-        We are also committed to ensuring the conference is a place
-        where ideas are exchanged, old friends get together, new friends meet and <strong>harassment
-        is not tolerated</strong>. We expect speakers, attendees and sponsor representatives to be
-        professional and courteous to each other. We reserve the right to remove, without refund,
-        ANY attendee (speaker or otherwise) who is unable to adhere to this policy.
-    </p>
+<div class="flex justify-between items-center mb-4">
+    <div class="w-1/3 px-4">
+        <img src="/assets/img/rainbowlephpant.png" alt="RainbowLePHPant - PHP Diversity ElePHPant"
+             class="w-auto">
+    </div>
+    <div class="w-2/3 px-4">
+        <h2>Diversity matters!</h2>
+        <p>
+            The organizers of {{ site.title }} and the community around the PHP USERGROUP DRESDEN e.V. aim to create a conference
+            experience that is as inclusive as possible. We invite everyone to submit excellent talk or workshop ideas.
+        </p>
+        <p>
+            We are also committed to ensuring the conference is a place
+            where ideas are exchanged, old friends get together, new friends meet and
+            <strong>harassment is not tolerated</strong>.
+        </p>
+        <p>
+            We expect speakers, attendees and sponsor representatives to be
+            professional and courteous to each other. We reserve the right to remove, without refund,
+            ANY attendee (speaker or otherwise) who is unable to adhere to our
+            <a href="{{ site.coc_link }}" target="_blank" title="Dresden Communities - Code of Conduct">Code of Conduct</a>.
+        </p>
+        <h5>#<span class="text-brand">BE</span><b>PHPRIENDS</b></h5>
+    </div>
 </div>
