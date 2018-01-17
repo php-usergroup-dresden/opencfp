@@ -3,9 +3,9 @@
 {% block scripts %}
     {{ parent() }}
     <script type="text/javascript">
-        var input = document.getElementById('form-user-photo')
-        var label = input.previousElementSibling
-        var originalLabelValue = label.innerHTML
+        var input = document.getElementById('form-user-photo');
+        var label = input.previousElementSibling;
+        var originalLabelValue = label.innerHTML;
 
         input.addEventListener('change', function (e) {
             if (this.files) {
@@ -23,5 +23,6 @@
 
 {% block content %}
     <h2 class="headline">My Profile</h2>
+    <hr>
     {% include 'forms/_user.twig' %}
 {% endblock %}

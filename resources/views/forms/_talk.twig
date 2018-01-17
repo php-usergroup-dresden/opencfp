@@ -7,14 +7,14 @@
 
     <div class="flex">
         <div class="mr-4 w-3/5">
-            <label for="form-talk-title">Talk Title</label>
+            <label for="form-talk-title">Talk/Workshop title</label>
             <input id="form-talk-title" type="text" name="title" placeholder="Talk Title" value="{{ title }}" maxlength="100">
 
             <label for="form-talk-description">Description/Abstract</label>
             <textarea id="form-talk-description" name="description" placeholder="Give a description of your talk (Abstract)" rows="10">{{ description }}</textarea>
             <p class="text-xs text-em mb-2 text-dark-soft">Speaker abstract can be written using <a href="https://daringfireball.net/projects/markdown/basics" target="_blank" rel="noopener noreferrer">markdown</a> to support links</p>
 
-            <label for="form-talk-other" >Additional Talk Information</label>
+            <label for="form-talk-other" >Additional talk/workshop information</label>
             <textarea id="form-talk-other" name="other" placeholder="Other Considerations, such as Joind.In, Lanyrd, local user group, etc." rows="10">{{ other }}</textarea>
             <p class="text-xs text-em mb-2 text-dark-soft">Talk additional information can be written using <a href="https://daringfireball.net/projects/markdown/basics" target="_blank" rel="noopener noreferrer">markdown</a> to support links</p>
         </div>
@@ -22,21 +22,21 @@
             <label for="form-talk-slides">Slides</label>
             <input id="form-talk-slides" type="text" name="slides" placeholder="Slides URL (if exists)" value="{{ slides }}">
 
-            <label for="form-talk-type">Talk Type</label>
+            <label for="form-talk-type">Talk type</label>
             <select id="form-talk-type" name="type">
                 {% for typeKey, displayType in talkTypes %}
                     <option value="{{ typeKey }}" {% if type == typeKey %}selected {% endif %}>{{ displayType }}</option>
                 {% endfor %}
             </select>
 
-            <label for="form-talk-category">Talk Category</label>
+            <label for="form-talk-category">Talk category</label>
             <select id="form-talk-category" name="category">
                 {% for categoryKey, displayCategory in talkCategories %}
                     <option value="{{ categoryKey }}" {% if category == categoryKey %}selected {% endif %}>{{ displayCategory }}</option>
                 {% endfor %}
             </select>
 
-            <label for="form-talk-level">Talk Level</label>
+            <label for="form-talk-level">Talk level</label>
             <select id="form-talk-level" name="level">
                 {% for levelKey, displayLevel in talkLevels %}
                     <option value="{{ levelKey }}" {% if level == levelKey %}selected {% endif %}>{{ displayLevel }}</option>
@@ -48,6 +48,27 @@
             </div>
             <div class="my-1">
                 <input id="form-desired" name="desired" type="checkbox" value="1" {% if desired == '1' %}checked{% endif %}> <label for="form-desired" class="text-dark text-base">Of your submissions, is this your best?</label>
+            </div>
+
+
+            <div class="mt-8">
+                <h4>Important information</h4>
+                <hr>
+                <p>
+                    Please note that the number of workshop attendees is
+                    <b>limited to a maximum of 25 people for each workshop</b>.
+                </p>
+                <p>
+                    If you're submitting a workshop proposal, please list the material you'll need at the venue in
+                    the "Additional talk/workshop information" field.
+                </p>
+                <p>
+                    Please read about our
+                    <a href="{{ url('speaker_package') }}" title="Speaker compensation packages" target="_blank">
+                        <b>speaker compensation packages</b>
+                    </a>
+                    before you submit your talk/workshop to avoid misunderstandings.
+                </p>
             </div>
         </div>
     </div>

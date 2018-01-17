@@ -1303,6 +1303,7 @@ textarea {
   width: 100%;
   resize: vertical;
   border-radius: .125rem;
+  border-width: 1px;
   border-color: #9babb4;
 }
 
