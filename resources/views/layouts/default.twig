@@ -3,6 +3,70 @@
 <head>
     <title>{% block title %}{{ site.title }}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="PHP Developer Days 2018 by PHP USERGROUP DRESDEN e.V.">
+    <meta name="keywords" content="Conference, Developer, PHP, Dresden, Germany, 2018">
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="geo.region" content="DE-SN"/>
+    <meta name="geo.placename" content="Dresden"/>
+    <meta name="geo.position" content="51.052088;13.741672"/>
+    <meta name="ICBM" content="51.052088, 13.741672"/>
+    <meta name="twitter:site" content="@PHPDD">
+    <meta name="twitter:creator" content="@PHPDD">
+    <script type="application/ld+json">{% spaceless %}
+{
+  "@context" : "http://schema.org",
+  "@type": "Person",
+  "name": "PHP Developer Days 2018",
+  "image": "/assets/img/socialcard.png",
+  "url": "https://cfp.phpdd.org",
+  "sameAs" : [
+      "https://twitter.com/PHPDD",
+      "https://2018.phpdd.org",
+    ]
+  }
+}{% endspaceless %}</script>
+    <meta property="article:author" content="http://phpug-dresden.org"/>
+    <meta property="article:publisher" content="http://phpug-dresden.org"/>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="referrer" content="origin"/>
+
+    <meta property="og:site_name" content="PHP Developer Days 2018"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="{{ site.title }} | PHP Developer Days 2018"/>
+    <meta property="og:description" content="PHP Developer Days 2018 by PHP USERGROUP DRESDEN e.V."/>
+    <meta property="og:url" content="https://cfp.phpdd.org"/>
+    <meta property="og:image" content="/assets/img/socialcard.png"/>
+    <meta property="article:published_time" content="{{ 'now'|date('c') }}"/>
+    <meta property="article:modified_time" content="{{ 'now'|date('c') }}"/>
+	{% for tag in page.getTags %}
+        <meta property="article:tag" content="{{ tag }}"/>
+	{% endfor %}
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="{{ site.title }} | PHP Developer Days 2018"/>
+    <meta name="twitter:description" content="PHP Developer Days 2018 by PHP USERGROUP DRESDEN e.V."/>
+    <meta name="twitter:url" content="{{ url('homepage') }}"/>
+    <meta name="twitter:image:src" content="/assets/img/socialcard.png"/>
+
+    <meta name="generator" content="OpenCFP"/>
+
     <link href="{{ assets('css/app.css') }}" rel="stylesheet" media="screen">
 </head>
 <body class="border-t-4 border-brand">
